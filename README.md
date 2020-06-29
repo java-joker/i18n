@@ -13,4 +13,6 @@ use com.i18n.core.service.impl.I18nServiceImpl.translate translate to other lang
 via com.i18n.core.advice.I18nResponseBodyAdvice.Translate translate to corresponding language return.  
 (reference: com.i18n.core.controller.TestController.test)  
 
+简书地址: https://www.jianshu.com/p/c5fd24fe5b68
+
 qq email: 2791951533@qq.com  
