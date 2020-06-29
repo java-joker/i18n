@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+    url: jdbc:h2:mem:i18n_db
+    username: sa
+    password: sa
+  #http://localhost:8080/h2-console 通过项目来进行访问数据库
+  h2:
+    console:
+      settings:
+        web-allow-others: true
+      enabled: true
+  messages:
+    basename: static/i18n/discount
+schedule:
+  cron:
+    i18n: 0 0/1 * * * ?
+logging:
+  level:
+    com.baomidou.mybatisplus.samples.quickstart: debug
